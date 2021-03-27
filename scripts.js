@@ -8,3 +8,19 @@ form.addEventListener("submit", (event) => {
 
   // TODO: get the name from the form and add them to 'students'
 });
+
+// Part of homework 9
+document.querySelector("#fname").addEventListener("focus", (e) => {
+  e.preventDefault();
+  console.log("Entered input!");
+});
+
+document.querySelector("#lname").addEventListener("blur", (e) => {
+  e.preventDefault();
+  console.log("Left input!");
+});
+
+document.querySelector("form").addEventListener("submit", (e) => {
+  e.preventDefault();
+  console.log("Submitted form!");
+});
