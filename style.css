@@ -1,1 +1,18 @@
+#fname,
+#lname {
+  background-color: lightgrey;
+  margin: 10px;
+  padding: 5px;
+}
 
+label {
+  margin-left: 10px;
+}
+
+button {
+  background-color: black;
+  color: white;
+  margin-left: 100px;
+  margin-top: 10px;
+  padding: 5px;
+}
