@@ -11,20 +11,25 @@
 
     <link rel="stylesheet" href="style.css" />
 
-    <title>Random Student Picker</title>
+    <title>Random Student Picker | Home</title>
   </head>
   <body>
     <h1>Random Student Picker</h1>
 
-    <form>
-      <div>
-        <label for="fname">First Name:</label><input type="text" id="fname" />
-      </div>
-      <div>
-        <label for="lname">Last Name:</label><input type="text" id="lname" />
-      </div>
-      <button type="submit">Add Student!</button>
-    </form>
+    <div class="flex flex--align-center flex--justify-center">
+      <form class="flex">
+        <div>
+          <label for="fname" class="screen-reader-text">First Name:</label
+          ><input type="text" id="fname" />
+        </div>
+        <div>
+          <label for="lname" class="screen-reader-text">Last Name:</label
+          ><input type="text" id="lname" />
+        </div>
+        <button type="submit" class="button">Add Student!</button>
+        <button type="reset" class="button button--red">Reset</button>
+      </form>
+    </div>
     <script src="./scripts.js" type="module"></script>
   </body>
 </html>
