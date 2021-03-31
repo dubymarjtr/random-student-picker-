@@ -1,38 +1,39 @@
-#fname,
-#lname {
-  background-color: lightgrey;
-  justify-content: center;
-  margin: 10px;
-  padding: 5px;
+:root {
+  --medium-gap: 8px;
 }
 
-label {
-  margin-left: 10px;
+input {
+  background-color: #ffe3e8;
+  padding: 10px 5px;
 }
 
 .button {
-  background-color: green;
+  background-color: #9bdeac;
   border-radius: 5px;
   color: black;
-  margin-left: 10px;
-  margin-top: 10px;
   padding: 5px;
 }
 
-.button--red {
-  background-color: red;
+.button--reset {
+  background-color: #f05f7a;
 }
 form {
-  border: 1px black solid;
-  gap: 4px;
+  background-color: #cb8f95;
+  border: 1px #cb8f95 solid;
+  border-radius: 5px;
+  gap: var(--medium-gap);
   margin: 0 auto;
-  width: 550px;
+  padding: 70px 20px;
 }
 
 .flex {
   display: flex;
+  flex-wrap: wrap;
+  gap: var(--medium-gap);
+}
+
+.flex--column {
   flex-direction: column;
-  gap: 24px;
 }
 
 .flex--justify-center {
@@ -43,10 +44,8 @@ form {
   align-items: center;
 }
 
-.flex-- div {
-  gap: 8px;
-  height: 100vh;
-  width: 100vw;
+.text-center {
+  text-align: center;
 }
 
 /* CSS Tricks */
