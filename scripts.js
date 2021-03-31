@@ -10,17 +10,17 @@ form.addEventListener("submit", (event) => {
 });
 
 // Part of homework 9
-document.querySelector("#fname").addEventListener("focus", (e) => {
-  e.preventDefault();
-  console.log("Entered input!");
-});
+// document.querySelector("#fname").addEventListener("focus", (e) => {
+//   e.preventDefault();
+//   console.log("Entered input!");
+// });
 
-document.querySelector("#lname").addEventListener("blur", (e) => {
-  e.preventDefault();
-  console.log("Left input!");
-});
+// document.querySelector("#lname").addEventListener("blur", (e) => {
+//   e.preventDefault();
+//   console.log("Left input!");
+// });
 
-document.querySelector("form").addEventListener("submit", (e) => {
-  e.preventDefault();
-  console.log("Submitted form!");
-});
+// document.querySelector("form").addEventListener("submit", (e) => {
+//   e.preventDefault();
+//   console.log("Submitted form!");
+// });
