@@ -5,11 +5,9 @@ const form = document.querySelector("form");
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  // TODO: get the name from the form and add them to 'students'
   const newStudent = Object.fromEntries(new FormData(event.target));
 
   students.push(newStudent);
-  console.log(students);
 });
 
 // Part of homework 9
