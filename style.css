@@ -1,9 +1,13 @@
 :root {
   --medium-gap: 8px;
+  --primary-color: #cb8f95;
+  --input-color: #eee2e7;
+  --heading-color: #481921;
 }
 
 input {
-  background-color: #ffe3e8;
+  background-color: var(--input-color);
+  opacity: 0.5;
   padding: 10px 5px;
 }
 
@@ -18,12 +22,16 @@ input {
   background-color: #f05f7a;
 }
 form {
-  background-color: #cb8f95;
-  border: 1px #cb8f95 solid;
+  background-color: var(--primary-color);
+  border: 1px var(--primary-color) solid;
   border-radius: 5px;
   gap: var(--medium-gap);
   margin: 0 auto;
   padding: 70px 20px;
+}
+
+h1 {
+  color: var(--heading-color);
 }
 
 .flex {
@@ -46,6 +54,10 @@ form {
 
 .text-center {
   text-align: center;
+}
+
+.flex--align-end {
+  align-items: flex-end;
 }
 
 /* CSS Tricks */
