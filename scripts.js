@@ -15,3 +15,7 @@ form.addEventListener("submit", (event) => {
 
   students.push(newStudent);
 });
+
+document.querySelector(".button--jumbo").addEventListener("click", () => {
+  console.log(students[getRandomIntInclusive(0, students.length - 1)]);
+});
