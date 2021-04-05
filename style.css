@@ -27,11 +27,13 @@ input {
   color: black;
   font-size: 15px;
   height: 10vh;
+  margin: 30px 20px;
   transition-duration: 1s;
   width: 20vw;
 }
 .button--jumbo:hover {
   border-radius: 32px;
+  font-weight: bold;
   transition: all 0.25s;
 }
 
