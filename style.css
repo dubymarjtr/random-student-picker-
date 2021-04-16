@@ -3,6 +3,22 @@
   --primary-color: #cb8f95;
   --input-color: #eee2e7;
   --heading-color: #481921;
+  --button-color: #9bdeac;
+  --button-reset: #f05f7a;
+  --button-jumbo: #eee2e7;
+  --background-color: #d5cabd;
+  --border-color: #cb8f95;
+  --button-text: black;
+  --button-text-reset: black;
+  --placeholder-color: grey;
+}
+::placeholder {
+  color: var(--placeholder-color);
+  opacity: 1;
+}
+
+body {
+  background-color: var(--background-color);
 }
 
 input {
@@ -12,19 +28,20 @@ input {
 }
 
 .button {
-  background-color: #9bdeac;
+  background-color: var(--button-color);
   border-radius: 5px;
-  color: black;
+  color: var(--button-text);
   padding: 5px;
 }
 
 .button--reset {
-  background-color: #f05f7a;
+  background-color: var(--button-reset);
+  color: var(--button-text-reset);
 }
 
 .button--jumbo {
-  background-color: #eee2e7;
-  color: black;
+  background-color: var(--button-jumbo);
+  color: var(--button-text);
   font-size: 15px;
   height: 10vh;
   margin: 30px 20px;
@@ -37,9 +54,15 @@ input {
   transition: all 0.25s;
 }
 
+.button--dark {
+  height: 45px;
+  width: 100px;
+  margin: 30px 20px;
+}
+
 form {
   background-color: var(--primary-color);
-  border: 1px var(--primary-color) solid;
+  border: 1px var(--border-color) solid;
   border-radius: 5px;
   gap: var(--medium-gap);
   margin: 0 auto;
