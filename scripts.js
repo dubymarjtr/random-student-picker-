@@ -29,6 +29,7 @@ document.querySelector(".button--jumbo").addEventListener("click", () => {
 
 const root = document.querySelector(":root");
 const inputFont = document.querySelector("input");
+const btnText = document.querySelector("#test");
 document.querySelector("#test").addEventListener("click", () => {
   root.style.setProperty("--background-color", "#2A272A"); /* background page */
   root.style.setProperty("--primary-color", "#4B4A54"); /* form color */
@@ -41,4 +42,6 @@ document.querySelector("#test").addEventListener("click", () => {
   root.style.setProperty("--button-text-reset", "#D3FBD8");
   root.style.setProperty("--placeholder-color", "#CF9EAC");
   root.style.setProperty("--button-jumbo", "#564147");
+
+  document.querySelector("#test").innerHTML = "Daytime Mode";
 });
